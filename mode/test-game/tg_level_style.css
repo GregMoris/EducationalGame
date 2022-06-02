@@ -1,0 +1,123 @@
+/* ПОдключение семейства шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0; /* Отступ от верхней границы до контента */
+    padding: 0; /* Отступ между внутренней границей и контентом */
+    box-sizing: border-box; /* Параменр задающий жесткое фиксирование размера элемента и при изменении размеров границ, размер менятся внуть, а не увеличивает сам контейнер*/
+}
+
+.game {
+    min-width: 950px; /* Минимальная ширина игрового поля */
+    min-height: 512px; /* Минимальная высота доски */
+    height: 100vh; /* Высота игрового поля */
+    display: flex; /* Правильное позиционирование элементов внутри и перенос их, при достижении края родительского элемента */
+    background-color: #a5a5a5; /* Цвет заднего фона */
+}
+
+.definition-board,
+.pictures-board {
+    min-width: 420px; /* Минимальная ширина доски */
+    min-height: 350px; /* Минимальная высота доски*/
+    width: calc(
+        45vw - 3vw
+    ); /* Вычисление высоты доски с учетом виидмой области браузера */
+    height: calc(
+        65vh - 3vh
+    ); /* Вычисление высоты доски с учетом виидмой области браузера */
+    margin: auto; /* Автоматическое позиционирование по центру*/
+    display: flex; /*Размещение элементов в виде flex блоков*/
+    flex-flow: row wrap; /* Сокращенная структура  расположения элементов слева направо с возможностью переноса на новую строку*/
+    border-radius: 40px; /* Радиус закругления углов доски*/
+    background-color: #333333; /* Общи цвет доски*/
+    outline: 2px solid black; /* Размер и цвет рамки доски*/
+    perspective: 1000px; /* Задает расстояние между точкой отсчёта и Z-координатой */
+}
+
+.definition,
+.pictures {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    transform: scale(1);
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d; /* Визуальное отображение явного поворота карточки */
+}
+.definition.flip,
+.pictures.flip,
+.not-selected-def,
+.not-selected-pic {
+    transform: rotateY(
+        180deg
+    ); /* Разворот карточек по Y-координате на 180 градусов*/
+}
+
+.not-selected-pic,
+.selected-pic,
+.not-selected-def,
+.selected-def {
+    width: 100%;
+    height: 100%;
+    padding: calc(1%); /* Отступ между внутренней границей и контентом */
+    position: absolute; /* Абсолютное позиционирование карточки, что другие объекты располагаются, будто его нет в пространстве */
+    backface-visibility: hidden; /* Верная инвертация карточек при развороте */
+}
+
+.center-board {
+    min-width: 210px; /* Минимальный размер ширины */
+    min-height: 700px; /* Минимальный размер высоты */
+    margin-bottom: 3vh; /* Отступ между нижней внешней границей и контентом */
+    width: calc(12vw); /* Размер ширины элемента*/
+    display: inline-block; /* Параметр обтекаемости блока для расположения вплотную с другими элементами */
+}
+
+h1 {
+    font-size: calc(1.2rem); /* Размер шрифта */
+    font-family: "Press Start 2P", cursive; /*Семейство шрифтов для отображения их на веб-ресурсе*/
+    color: #000000; /* Цвет шрифта */
+    text-shadow: #cccccc 4px 4px; /* Цвет тени шрифта*/
+}
+
+.stopwatch,
+.attempts,
+#game-button {
+    min-width: 210px; /* Минимальный размер ширины */
+    text-align: center; /* Выравнивание контента по центру*/
+    background-color: #dddddd; /* Цвет фона*/
+    outline: 2px solid black; /* Размер и цвет границы */
+    border-radius: 20px; /* Разиус закругления углов */
+}
+.stopwatch,
+#game-button {
+    padding: 3vh; /* Отступ между внутренней границей и контентом */
+}
+.stopwatch,
+.attempts {
+    margin-top: 2vh; /* Отступ между верхней внешней границей и контентом */
+}
+.attempts {
+    padding: 1vh; /* Отступ между внутренней границей и контентом */
+}
+
+.space {
+    height: calc(70vh); /* Размер высоты разделителя секундомера и кнопки */
+}
+
+#game-button:active {
+    transform: scale(0.9); /* Измененный размер кнопки, после нажатия на неё*/
+    transition: transform 0.2s; /* Время, за которое кнопка меняет размер */
+}
+
+.not-selected-pic,
+.selected-pic,
+.not-selected-def,
+.selected-def,
+.stopwatch,
+.attempts,
+#game-button {
+    -moz-user-select: none; /* Значения для Mozilla */
+    -khtml-user-select: none; /* Значения для html */
+    -webkit-user-select: none; /* Значения для WebKit */
+    user-select: none; /* Определение возможности пользователям выделять текст*/
+}

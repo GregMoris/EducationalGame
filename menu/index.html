@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu</title>
+        <link rel="stylesheet" href="all_style.css" />
+    </head>
+
+    <body>
+        <div class="menu">
+            <canvas id="myCanvas"> </canvas>
+            <div class="menu-board">
+                <div class="page-name">
+                    <h1 id="name">Электро Викторина</h1>
+                </div>
+                <div
+                    id="page-button"
+                    onclick="document.location='../mode/mode_index.html'"
+                >
+                    <h2 id="play">Играть</h2>
+                </div>
+                <div
+                    id="page-button"
+                    onclick="document.location='../about/about_index.html'"
+                >
+                    <h2 id="about">Об игре</h2>
+                </div>
+                <!-- <div id="page-button" onclick="window.close();">
+                    <h2 id="exit">Выход</h2>
+                </div> -->
+            </div>
+            <div class="aboutcap">
+                <p>Created by Egoshin Anton</p>
+            </div>
+            <div class="version">
+                <p>v 0.1</p>
+            </div>
+        </div>
+
+        <script src="all_script.js"></script>
+    </body>
+</html>

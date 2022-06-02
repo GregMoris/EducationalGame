@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="fg_level3_style.css" /> -->
+        <link rel="stylesheet" href="../fg_level_style.css" />
+        <title>Level 3</title>
+    </head>
+
+    <body>
+        <div class="game-level3">
+            <section class="definition-board-level3">
+                <!-- Теги <div>, которые со является блочным элементом, хранящим изображения из указанной директории
+                    Для упрощения создавался с помощью структуры .definition*12>img.not-selected-def+img.selected-def+.img.correctly-def -->
+                <div class="definition" data-quize="1">
+                    <img
+                        src="./img/def_svg/sel/1.svg"
+                        alt="1"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/1.svg"
+                        alt="1"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="argument">
+                    <img
+                        src="./img/def_svg/sel/argument.svg"
+                        alt="argument"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/argument.svg"
+                        alt="argument"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="decart">
+                    <img
+                        src="./img/def_svg/sel/decart.svg"
+                        alt="decart"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/decart.svg"
+                        alt="decart"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="disjunction">
+                    <img
+                        src="./img/def_svg/sel/disjunction.svg"
+                        alt="disjunction"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/disjunction.svg"
+                        alt="disjunction"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="f-line">
+                    <img
+                        src="./img/def_svg/sel/f-line.svg"
+                        alt="f-line"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/f-line.svg"
+                        alt="f-line"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="http">
+                    <img
+                        src="./img/def_svg/sel/http.svg"
+                        alt="http"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/http.svg"
+                        alt="http"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="hyperbole">
+                    <img
+                        src="./img/def_svg/sel/hyperbole.svg"
+                        alt="hyperbole"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/hyperbole.svg"
+                        alt="hyperbole"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="linear">
+                    <img
+                        src="./img/def_svg/sel/linear.svg"
+                        alt="linear"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/linear.svg"
+                        alt="linear"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="pi">
+                    <img
+                        src="./img/def_svg/sel/pi.svg"
+                        alt="pi"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/pi.svg"
+                        alt="pi"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="secant">
+                    <img
+                        src="./img/def_svg/sel/secant.svg"
+                        alt="secant"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/secant.svg"
+                        alt="secant"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="string">
+                    <img
+                        src="./img/def_svg/sel/string.svg"
+                        alt="string"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/string.svg"
+                        alt="string"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="unit">
+                    <img
+                        src="./img/def_svg/sel/unit.svg"
+                        alt="unit"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/unit.svg"
+                        alt="unit"
+                        class="selected-def"
+                    />
+                </div>
+            </section>
+            <div class="center-board">
+                <div class="stopwatch-level3">
+                    <h1 class="level3" id="clock">00:00:00</h1>
+                </div>
+                <div class="space"></div>
+                <div id="game-button" class="button-level3">
+                    <h1 class="level3" id="back-menu">В меню</h1>
+                </div>
+            </div>
+            <section class="pictures-board-level3">
+                <!-- Теги <div>, которые со является блочным элементом, хранящим изображения из указанной директории
+                    Для упрощения создавался с помощью структуры .pictures*12>img.not-selected-pic+img.selected-pic+.img.correctly-pic -->
+                    <div class="pictures" data-quize="1">
+                        <img
+                            src="./img/pic_svg/sel/1.svg"
+                            alt="1"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/1.svg"
+                            alt="1"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="argument">
+                        <img
+                            src="./img/pic_svg/sel/argument.svg"
+                            alt="argument"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/argument.svg"
+                            alt="argument"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="decart">
+                        <img
+                            src="./img/pic_svg/sel/decart.svg"
+                            alt="decart"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/decart.svg"
+                            alt="decart"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="disjunction">
+                        <img
+                            src="./img/pic_svg/sel/disjunction.svg"
+                            alt="disjunction"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/disjunction.svg"
+                            alt="disjunction"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="f-line">
+                        <img
+                            src="./img/pic_svg/sel/f-line.svg"
+                            alt="f-line"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/f-line.svg"
+                            alt="f-line"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="http">
+                        <img
+                            src="./img/pic_svg/sel/http.svg"
+                            alt="http"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/http.svg"
+                            alt="http"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="hyperbole">
+                        <img
+                            src="./img/pic_svg/sel/hyperbole.svg"
+                            alt="hyperbole"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/hyperbole.svg"
+                            alt="hyperbole"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="linear">
+                        <img
+                            src="./img/pic_svg/sel/linear.svg"
+                            alt="linear"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/linear.svg"
+                            alt="linear"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="pi">
+                        <img
+                            src="./img/pic_svg/sel/pi.svg"
+                            alt="pi"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/pi.svg"
+                            alt="pi"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="secant">
+                        <img
+                            src="./img/pic_svg/sel/secant.svg"
+                            alt="secant"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/secant.svg"
+                            alt="secant"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="string">
+                        <img
+                            src="./img/pic_svg/sel/string.svg"
+                            alt="string"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/string.svg"
+                            alt="string"
+                            class="selected-def"
+                        />
+                    </div>
+                    <div class="pictures" data-quize="unit">
+                        <img
+                            src="./img/pic_svg/sel/unit.svg"
+                            alt="unit"
+                            class="not-selected-def"
+                        />
+                        <img
+                            src="./img/pic_svg/not_sel/unit.svg"
+                            alt="unit"
+                            class="selected-def"
+                        />
+                    </div>
+                </section>
+            </section>
+        </div>
+        <script src="../fg_level_script.js"></script>
+    </body>
+</html>

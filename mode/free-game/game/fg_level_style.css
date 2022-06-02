@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0; /* Отступ от верхней границы до контента */
+    padding: 0; /* Отступ между внутренней границей и контентом */
+    box-sizing: border-box; /* Параменр задающий жесткое фиксирование размера элемента и при изменении размеров границ, размер менятся внуть, а не увеличивает сам контейнер*/
+}
+
+.game-level1,
+.game-level2,
+.game-level3 {
+    min-width: 950px; /* Минимальная ширина игрового поля */
+    min-height: 512px; /* Минимальная высота доски */
+    height: 100vh; /* Высота игрового поля */
+    display: flex; /* Правильное позиционирование элементов внутри и перенос их, при достижении края родительского элемента */
+}
+.game-level1 {
+    background-color: #ffe4c4; /* Цвет заднего фона для первого уровня*/
+}
+.game-level2 {
+    background-color: #a07f8a; /* Цвет заднего фона для первого уровня*/
+}
+.game-level3 {
+    background-color: #39525a; /* Цвет заднего фона для первого уровня*/
+}
+
+.definition-board-level1,
+.pictures-board-level1,
+.definition-board-level2,
+.pictures-board-level2,
+.definition-board-level3,
+.pictures-board-level3 {
+    min-width: 420px; /* Минимальная ширина доски */
+    min-height: 350px; /* Минимальная высота доски*/
+    width: calc(
+        45vw - 3vw
+    ); /* Вычисление высоты доски с учетом виидмой области браузера */
+    height: calc(
+        65vh - 3vh
+    ); /* Вычисление высоты доски с учетом виидмой области браузера */
+    margin: auto; /* Автоматическое позиционирование по центру*/
+    display: flex; /*Размещение элементов в виде flex блоков*/
+    flex-flow: row wrap; /* Сокращенная структура  расположения элементов слева направо с возможностью переноса на новую строку*/
+    border-radius: 40px; /* Радиус закругления углов доски*/
+
+    outline: 2px solid black; /* Размер и цвет рамки доски*/
+    perspective: 1000px; /* Задает расстояние между точкой отсчёта и Z-координатой */
+}
+
+.definition-board-level1,
+.pictures-board-level1 {
+    background-color: #d2691e; /* Общий цвет обеих досок первого уровня*/
+}
+.definition-board-level2 {
+    background-color: #9aaf72; /* Задний фон доски вопросов второго уровня*/
+}
+.pictures-board-level2 {
+    background-color: #5766aa; /* Задний фон доски ответов второго уровня*/
+}
+.definition-board-level3 {
+    background-color: #7276af; /* Задний фон доски вопросов третьего уровня*/
+}
+.pictures-board-level3 {
+    background-color: #aa577e; /* Задний фон доски ответов третьего уровня*/
+}
+
+.definition,
+.pictures {
+    width: calc(25% - 10px); /* Ширина карточки */
+    height: calc(33.333% - 10px); /* Высота карточки*/
+    margin: 5px; /* Расстояние от внешней границы до контерта */
+    transform: scale(
+        1
+    ); /* Размер трансвормации где число умножается на 100% и получается итоговый размер изображения */
+    position: relative; /* Позиционирование элемента с учётом нормального потока документов и смещается относительно себя, как если бы значение position было по умолчанию, а не отноительно <body>*/
+    transition: transform 0.5s; /* Время изменения положения объекта */
+    transform-style: preserve-3d; /* Визуальное отображение явного поворота 3d карточки  в пространстве*/
+}
+
+.definition.flip,
+.pictures.flip,
+.not-selected-def,
+.not-selected-pic {
+    transform: rotateY(
+        180deg
+    ); /* Разворот карточек по Y-координате на 180 градусов*/
+}
+
+.not-selected-pic,
+.selected-pic,
+.not-selected-def,
+.selected-def {
+    width: 100%;
+    height: 100%;
+    padding: calc(1%);
+    position: absolute; /* Абсолютное позиционирование карточки, что другие объекты располагаются, будто его нет в пространстве */
+    backface-visibility: hidden; /* Верная инвертация карточек при развороте */
+}
+
+.center-board {
+    min-width: 210px; /* Минимальный размер ширины */
+    min-height: 700px; /* Минимальный размер высоты */
+    margin-top: 3vh; /* Отступ между верхней внешней границей и контентом */
+    margin-bottom: 3vh; /* Отступ между нижней внешней границей и контентом */
+    width: calc(12vw); /* Размер ширины элемента*/
+    display: inline-block; /* Параметр обтекаемости блока для расположения вплотную с другими элементами */
+}
+.level1,
+.level2,
+.level3 {
+    font-size: calc(1.2rem); /* Размер шрифта для всех уровней */
+    font-family: "Press Start 2P", cursive; /*Семейство шрифтов для отображения их на веб-ресурсе*/
+}
+.level1 {
+    color: #361c00; /* Цвет шрифта для первого уровня */
+    text-shadow: #c57000 4px 4px; /* Цвет тени шрифта первого уровня*/
+}
+.level2 {
+    color: #472b35; /* Цвет шрифта второго уровня */
+    text-shadow: #a07f8a 4px 4px; /* Цвет тени шрифта первого уровня*/
+}
+.level3 {
+    color: #303030; /* Цвет шрифта третьего уровня */
+    text-shadow: #868686 4px 4px; /* Цвет тени шрифта третьего уровня*/
+}
+
+.stopwatch-level1,
+.button-level1,
+.stopwatch-level2,
+.button-level2,
+.stopwatch-level3,
+.button-level3 {
+    min-width: 210px; /* Минимальный размер ширины */
+    padding: 3vh; /* Отступ между внутренней границей и контентом */
+    text-align: center; /* Выравнивание контента по центру*/
+    background-color: #ffcd9a; /* Цвет фона*/
+    outline: 2px solid black; /* Размер и цвет границы */
+    border-radius: 40px; /* Разиус закругления углов */
+}
+.stopwatch-level1,
+.button-level1 {
+    background-color: #ffcd9a; /* Цвет фона секундомера и фона для первого уровня*/
+}
+
+.stopwatch-level2,
+.button-level2 {
+    background-color: #d1d1d1; /* Цвет фона секундомера и фона для второго уровня*/
+}
+.stopwatch-level3,
+.button-level3 {
+    background-color: #e6e6e6; /* Цвет фона секундомера и фона для первого уровня*/
+}
+.stopwatch-level1,
+.stopwatch-level2,
+.stopwatch-level3 {
+    margin-top: 2vh; /* Отступ между верхней внешней границей и контентом */
+}
+
+.space {
+    height: calc(80%); /* Размер высоты разделителя секундомера и кнопки */
+}
+
+.button-level1:active,
+.button-level1:active,
+.button-level3:active {
+    transform: scale(0.9); /* Измененный размер кнопки, после нажатия на неё*/
+    transition: transform 0.2s; /* Время, за которое кнопка меняет размер */
+}
+
+.not-selected-pic,
+.selected-pic,
+.not-selected-def,
+.selected-def,
+.stopwatch-level1,
+.button-level1,
+.stopwatch-level2,
+.button-level2,
+.stopwatch-level3,
+.button-level3 {
+    -moz-user-select: none; /* Значения для Mozilla */
+    -khtml-user-select: none; /* Значения для html */
+    -webkit-user-select: none; /* Значения для WebKit */
+    user-select: none; /* Определение возможности пользователям выделять текст*/
+}

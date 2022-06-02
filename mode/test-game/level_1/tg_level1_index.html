@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../tg_level_style.css" />
+        <title>Level 1</title>
+    </head>
+
+    <body>
+        <div class="game">
+            <section class="definition-board">
+                <!-- Теги <div>, которые со является блочным элементом, хранящим изображения из указанной директории
+                    Для упрощения создавался с помощью структуры .definition*12>img.not-selected-def+img.selected-def+.img.correctly-def -->
+                <div class="definition" data-quize="bear">
+                    <img
+                        src="./img/def_svg/sel/bear_sel.svg"
+                        alt="bear"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/bear.svg"
+                        alt="bear"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="cat">
+                    <img
+                        src="./img/def_svg/sel/cat_sel.svg"
+                        alt="cat"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/cat.svg"
+                        alt="cat"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="crocodile">
+                    <img
+                        src="./img/def_svg/sel/crocodile_sel.svg"
+                        alt="crocodile"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/crocodile.svg"
+                        alt="crocodile"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="dog">
+                    <img
+                        src="./img/def_svg/sel/dog_sel.svg"
+                        alt="dog"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/dog.svg"
+                        alt="dog"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="elephant">
+                    <img
+                        src="./img/def_svg/sel/elephant_sel.svg"
+                        alt="elephant"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/elephant.svg"
+                        alt="elephant"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="fox">
+                    <img
+                        src="./img/def_svg/sel/fox_sel.svg"
+                        alt="fox"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/fox.svg"
+                        alt="fox"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="hare">
+                    <img
+                        src="./img/def_svg/sel/hare_sel.svg"
+                        alt="hare"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/hare.svg"
+                        alt="hare"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="lion">
+                    <img
+                        src="./img/def_svg/sel/lion_sel.svg"
+                        alt="lion"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/lion.svg"
+                        alt="lion"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="monkey">
+                    <img
+                        src="./img/def_svg/sel/monkey_sel.svg"
+                        alt="monkey"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/monkey.svg"
+                        alt="monkey"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="owl">
+                    <img
+                        src="./img/def_svg/sel/owl_sel.svg"
+                        alt="owl"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/owl.svg"
+                        alt="owl"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="panda">
+                    <img
+                        src="./img/def_svg/sel/panda_sel.svg"
+                        alt="panda"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/panda.svg"
+                        alt="panda"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+                <div class="definition" data-quize="wolf">
+                    <img
+                        src="./img/def_svg/sel/wolf_sel.svg"
+                        alt="wolf"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/wolf.svg"
+                        alt="wolf"
+                        class="selected-def"
+                    />
+                    <img src="./img/" alt="" class="correctly-def" />
+                </div>
+            </section>
+            <div class="center-board">
+                <div class="stopwatch">
+                    <h1 id="clock">00:00:00</h1>
+                </div>
+                <div class="attempts">
+                    <h1 id="number-of-attempts-text">Попытки</h1>
+                    <br />
+                    <h1 id="number-of-attempts">5</h1>
+                </div>
+                <div class="space"></div>
+                <div id="game-button">
+                    <h1 id="back-menu">В меню</h1>
+                </div>
+            </div>
+            <section class="pictures-board">
+                <!-- Теги <div>, которые со является блочным элементом, хранящим изображения из указанной директории
+                    Для упрощения создавался с помощью структуры .pictures*12>img.not-selected-pic+img.selected-pic+.img.correctly-pic -->
+                <div class="pictures" data-quize="bear">
+                    <img
+                        src="./img/pic_svg/sel/bear_sel.svg"
+                        alt="bear"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/bear.svg"
+                        alt="bear"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="cat">
+                    <img
+                        src="./img/pic_svg/sel/cat_sel.svg"
+                        alt="cat"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/cat.svg"
+                        alt="cat"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="crocodile">
+                    <img
+                        src="./img/pic_svg/sel/crocodile_sel.svg"
+                        alt="crocodile"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/crocodile.svg"
+                        alt="crocodile"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="dog">
+                    <img
+                        src="./img/pic_svg/sel/dog_sel.svg"
+                        alt="dog"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/dog.svg"
+                        alt="dog"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="elephant">
+                    <img
+                        src="./img/pic_svg/sel/elephant_sel.svg"
+                        alt="elephant"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/elephant.svg"
+                        alt="elephant"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="fox">
+                    <img
+                        src="./img/pic_svg/sel/fox_sel.svg"
+                        alt="fox"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/fox.svg"
+                        alt="fox"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="hare">
+                    <img
+                        src="./img/pic_svg/sel/hare_sel.svg"
+                        alt="hare"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/hare.svg"
+                        alt="hare"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="lion">
+                    <img
+                        src="./img/pic_svg/sel/lion_sel.svg"
+                        alt="lion"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/lion.svg"
+                        alt="lion"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="monkey">
+                    <img
+                        src="./img/pic_svg/sel/monkey_sel.svg"
+                        alt="monkey"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/monkey.svg"
+                        alt="monkey"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="owl">
+                    <img
+                        src="./img/pic_svg/sel/owl_sel.svg"
+                        alt="owl"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/owl.svg"
+                        alt="owl"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="panda">
+                    <img
+                        src="./img/pic_svg/sel/panda_sel.svg"
+                        alt="panda"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/panda.svg"
+                        alt="panda"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+                <div class="pictures" data-quize="wolf">
+                    <img
+                        src="./img/pic_svg/sel/wolf_sel.svg"
+                        alt="wolf"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/wolf.svg"
+                        alt="wolf"
+                        class="selected-pic"
+                    />
+                    <img src="./img/" alt="" class="correctly-pic" />
+                </div>
+            </section>
+        </div>
+
+        <script src="../tg_level_script.js"></script>
+    </body>
+</html>

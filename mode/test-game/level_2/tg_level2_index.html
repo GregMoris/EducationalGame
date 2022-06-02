@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../tg_level_style.css" />
+        <title>Level 2</title>
+    </head>
+
+    <body>
+        <div class="game">
+            <section class="definition-board">
+                <!-- Теги <div>, которые со является блочным элементом, хранящим изображения из указанной директории
+                    Для упрощения создавался с помощью структуры .definition*12>img.not-selected-def+img.selected-def+.img.correctly-def -->
+                <div class="definition" data-quize="168">
+                    <img
+                        src="./img/def_svg/sel/168.svg"
+                        alt="168"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/168.svg"
+                        alt="168"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="199">
+                    <img
+                        src="./img/def_svg/sel/199.svg"
+                        alt="199"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/199.svg"
+                        alt="199"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="285">
+                    <img
+                        src="./img/def_svg/sel/285.svg"
+                        alt="285"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/285.svg"
+                        alt="285"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="1377">
+                    <img
+                        src="./img/def_svg/sel/1377.svg"
+                        alt="1377"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/1377.svg"
+                        alt="1377"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="x=1">
+                    <img
+                        src="./img/def_svg/sel/x=1.svg"
+                        alt="x=1"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/x=1.svg"
+                        alt="x=1"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="x=-150">
+                    <img
+                        src="./img/def_svg/sel/x=-150.svg"
+                        alt="x=-150"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/x=-150.svg"
+                        alt="x=-150"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="1062,6m">
+                    <img
+                        src="./img/def_svg/sel/1062,6m.svg"
+                        alt="1062,6m"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/1062,6m.svg"
+                        alt="1062,6m"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="797cm">
+                    <img
+                        src="./img/def_svg/sel/797cm.svg"
+                        alt="797cm"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/797cm.svg"
+                        alt="797cm"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="6822sec">
+                    <img
+                        src="./img/def_svg/sel/6822sec.svg"
+                        alt="6822sec"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/6822sec.svg"
+                        alt="6822sec"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="4187min">
+                    <img
+                        src="./img/def_svg/sel/4187min.svg"
+                        alt="4187min"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/4187min.svg"
+                        alt="4187min"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="1209,5kg">
+                    <img
+                        src="./img/def_svg/sel/1209,5kg.svg"
+                        alt="1209,5kg"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/1209,5kg.svg"
+                        alt="1209,5kg"
+                        class="selected-def"
+                    />
+                </div>
+                <div class="definition" data-quize="1507g">
+                    <img
+                        src="./img/def_svg/sel/1507g.svg"
+                        alt="1507g"
+                        class="not-selected-def"
+                    />
+                    <img
+                        src="./img/def_svg/not_sel/1507g.svg"
+                        alt="1507g"
+                        class="selected-def"
+                    />
+                </div>
+            </section>
+            <div class="center-board">
+                <div class="stopwatch">
+                    <h1 id="clock"></h1>
+                </div>
+                <div class="attempts">
+                    <h1 id="number-of-attempts-text">Попытки</h1>
+                    <br />
+                    <h1 id="number-of-attempts">5</h1>
+                </div>
+                <div class="space"></div>
+                <div id="game-button">
+                    <h1 id="back-menu">В меню</h1>
+                </div>
+            </div>
+            <section class="pictures-board">
+                <!-- Теги <div>, которые со является блочным элементом, хранящим изображения из указанной директории
+                    Для упрощения создавался с помощью структуры .pictures*12>img.not-selected-pic+img.selected-pic+.img.correctly-pic -->
+                <div class="pictures" data-quize="168">
+                    <img
+                        src="./img/pic_svg/sel/168.svg"
+                        alt="168"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/168.svg"
+                        alt="168"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="199">
+                    <img
+                        src="./img/pic_svg/sel/199.svg"
+                        alt="199"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/199.svg"
+                        alt="199"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="285">
+                    <img
+                        src="./img/pic_svg/sel/285.svg"
+                        alt="285"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/285.svg"
+                        alt="285"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="1377">
+                    <img
+                        src="./img/pic_svg/sel/1377.svg"
+                        alt="1377"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/1377.svg"
+                        alt="1377"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="x=1">
+                    <img
+                        src="./img/pic_svg/sel/x=1.svg"
+                        alt="x=1"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/x=1.svg"
+                        alt="x=1"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="x=-150">
+                    <img
+                        src="./img/pic_svg/sel/x=-150.svg"
+                        alt="x=-150"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/x=-150.svg"
+                        alt="x=-150"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="1062,6m">
+                    <img
+                        src="./img/pic_svg/sel/1062,6m.svg"
+                        alt="1062,6m"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/1062,6m.svg"
+                        alt="1062,6m"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="797cm">
+                    <img
+                        src="./img/pic_svg/sel/797cm.svg"
+                        alt="797cm"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/797cm.svg"
+                        alt="797cm"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="6822sec">
+                    <img
+                        src="./img/pic_svg/sel/6822sec.svg"
+                        alt="6822sec"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/6822sec.svg"
+                        alt="6822sec"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="4187min">
+                    <img
+                        src="./img/pic_svg/sel/4187min.svg"
+                        alt="4187min"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/4187min.svg"
+                        alt="4187min"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="1209,5kg">
+                    <img
+                        src="./img/pic_svg/sel/1209,5kg.svg"
+                        alt="1209,5kg"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/1209,5kg.svg"
+                        alt="1209,5kg"
+                        class="selected-pic"
+                    />
+                </div>
+                <div class="pictures" data-quize="1507g">
+                    <img
+                        src="./img/pic_svg/sel/1507g.svg"
+                        alt="1507g"
+                        class="not-selected-pic"
+                    />
+                    <img
+                        src="./img/pic_svg/not_sel/1507g.svg"
+                        alt="1507g"
+                        class="selected-pic"
+                    />
+                </div>
+            </section>
+        </div>
+        <script src="../tg_level_script.js"></script>
+    </body>
+</html>
